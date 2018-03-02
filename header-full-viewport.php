@@ -66,5 +66,22 @@
         <div class="hero-content">
             <h1 class="white hero-heading"><?php echo get_theme_mod('home_hero_heading', 'YAY I build a theme'); ?></h1>
         </div>
+        <div class="social">
+            <a href="https://www.facebook.com/amandalindseycook" target="_blank" onclick="_gaq.push(['_trackEvent', 'Artist', 'Click', 'Facebook Hero']);">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/thegreatfalken" target="_blank" onclick="_gaq.push(['_trackEvent', 'Artist', 'Click', 'Twitter Hero']);">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/amandalindseycook" target="_blank" onclick="_gaq.push(['_trackEvent', 'Artist', 'Click', 'Instagram Hero']);">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/playlist?list=PLUmTiGOxKUOhBx8xNu3ktk5x2zJsLk9j4" target="_blank" onclick="_gaq.push(['_trackEvent', 'Artist', 'Click', 'Youtube Hero']);">
+                <i class="fa fa-youtube"></i>
+            </a>
+            <a href="http://amandacookmusic.com/" target="_blank" onclick="_gaq.push(['_trackEvent', 'Artist', 'Click', 'Artist Website Hero']);">
+                <i class="fa fa-globe"></i>
+            </a>
+        </div>
     </header><!-- #masthead -->
 </div>
