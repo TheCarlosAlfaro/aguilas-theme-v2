@@ -20,8 +20,8 @@ function aguilas_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'aguilas_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 1440,
+		'height'                 => 800,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'aguilas_header_style',
 	) ) );

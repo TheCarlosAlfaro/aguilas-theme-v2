@@ -9,9 +9,7 @@
  * @package Aguilas
  */
 
-get_header(); ?>
-
-<?php get_template_part('parts/jumbotron'); ?>
+get_header('full-viewport'); ?>
 
 
 
