@@ -131,7 +131,7 @@ big {
 }
 
 .hero-heading {
-	font-size: 64px;
+	font-size: 20px;
     line-height: 70px;
     padding: 0;
     margin-top: -50px;
@@ -465,6 +465,24 @@ a:hover, a:active {
 .navbar-light .navbar-nav .nav-link:hover {
     color: #01B6CB;
 }
+/* ******* */
+.menu-text-menu {
+	float: left;
+	color: white;
+	font-size: 1em;
+	padding: 5px;
+}
+
+.custom-toggler.navbar-toggler {
+	border-color: rgb(255,255,255);
+	margin-top: -50px;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* ****** */
 
 /*--------------------------------------------------------------
 # SOCIAL MENU
@@ -707,7 +725,8 @@ object {
 }
 
 .site-branding, .navbar-brand {
-	max-width: 100px;
+	max-width: 80px;
+	margin-left: 0;
 }
 
 .navbar {
@@ -812,7 +831,7 @@ object {
 # Sections
 --------------------------------------------------------------*/
 
-/* Make Twenty Sixteen full width header */
+/* Make Theme full width header */
 
 .site-inner {
 	max-width: none;
@@ -825,35 +844,10 @@ object {
 	margin: 0 auto;
 }
 
-@media screen and (min-width: 44.1em) {
-	.site {
-	    margin: 0;
-	}
-
-	body:not(.custom-background-image):before, body:not(.custom-background-image):after {
-		height: 0;
-	}
-
-	.site-header {
-		background-size: cover !important;
-		height: 100vh;
-	  }
-}
-
-@media screen and (max-width: 44.0em) {
-	.site {
-	    margin: 0;
-	}
-
-	body:not(.custom-background-image):before, body:not(.custom-background-image):after {
-		height: 0;
-	}
-
-	.site-header {
-		background-size: cover !important;
-		height: 100vh;
-	  }
-}
+.site-header {
+	background-size: cover !important;
+	height: 100vh;
+  }
 
 .hero-content {
 	position: absolute;
@@ -864,4 +858,18 @@ object {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+
+@media (min-width: 768px) {
+	.site-branding, .navbar-brand {
+		max-width: 150px;
+		margin-left: 0;
+	}
+	.hero-heading {
+		font-size: 64px;
+		line-height: 70px;
+		padding: 0;
+		margin-top: -50px;
+	}
 }

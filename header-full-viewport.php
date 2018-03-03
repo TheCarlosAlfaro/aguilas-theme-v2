@@ -19,14 +19,28 @@
 
 	<?php wp_head(); ?>
 
+    <style>
+
+        .site-header {
+                background:linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<?php echo get_header_image() ?>) center no-repeat;
+        }
+
+        @media (min-width: 576px) {
+            .site-header {
+                background:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<?php echo get_theme_mod('home_hero_image', get_bloginfo('template_url').'/img/showcase.jpg') ?>) center no-repeat;
+            }
+        }
+    </style>
+
 </head>
 
 <body <?php body_class(); ?>>
 <div class="nav-container">
+
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aguilas' ); ?></a>
 
-    <header id="masthead" class="site-header" style="background:url(<?php echo get_header_image()?>) center no-repeat;">
-        <nav id="menu" class="navbar navbar-expand-md navbar-light" role="navigation">
+    <header id="masthead" class="site-header">
+        <nav id="menu" class="navbar fixed-top navbar-expand-xs navbar-light" role="navigation">
 
             <div class="container site-branding navbar-brand">
                 <?php
@@ -45,7 +59,8 @@
                 endif; ?>
             </div><!-- .site-branding -->
 
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="menu-text-menu">MENU</span>
                 <span class="navbar-toggler-icon"></span>
             </button>
             <?php
@@ -65,6 +80,7 @@
         </nav>
         <div class="hero-content">
             <h1 class="white hero-heading"><?php echo get_theme_mod('home_hero_heading', 'YAY I build a theme'); ?></h1>
+            <p class="white">CO-SENIOR PASTOR OF EAGLES FAMILY CHRISTIAN CENTER</p>
         </div>
         <div class="social">
             <a href="https://www.facebook.com/amandalindseycook" target="_blank" onclick="_gaq.push(['_trackEvent', 'Artist', 'Click', 'Facebook Hero']);">
