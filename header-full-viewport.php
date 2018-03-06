@@ -40,7 +40,8 @@
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aguilas' ); ?></a>
 
     <header id="masthead" class="site-header">
-        <nav id="menu" class="navbar fixed-top navbar-expand-xs navbar-light" role="navigation">
+
+        <nav id="menu" class="navbar fixed-top navbar-expand-md navbar-light" role="navigation">
 
             <div class="container site-branding navbar-brand">
                 <?php
