@@ -42,58 +42,86 @@ function aguilas_customize_register( $wp_customize ) {
 		'priority' => 3
 	));
 
-	// Home Hero Buttons
-	// Home Hero Button #1
-	$wp_customize->add_setting('btn1_url', array(
+	// Home Hero Social Links
+	// Home Hero Link #1
+	$wp_customize->add_setting('social1_url', array(
 		'default' => _x('#', 'aguilas'),
 		'type' => 'theme_mod'
 	));
-	$wp_customize->add_control('btn1_url', array(
-		'label' => __('Button 1 URL', 'aguilas'),
+	$wp_customize->add_control('social1_url', array(
+		'label' => __('Facebook Link URL', 'aguilas'),
 		'section' => 'home_hero',
 		'priority' => 4
 	));
-	$wp_customize->add_setting('btn1_text', array(
-		'default' => _x('Get it now!', 'aguilas'),
-		'type' => 'theme_mod'
-	));
-	$wp_customize->add_control('btn1_text', array(
-		'label' => __('Button 1 Text', 'aguilas'),
-		'section' => 'home_hero',
-		'priority' => 5
-	));
 
-	// Home Hero Button #2
-	$wp_customize->add_setting('btn2_url', array(
+
+	// Home Hero Link #2
+	$wp_customize->add_setting('social2_url', array(
 		'default' => _x('#', 'aguilas'),
 		'type' => 'theme_mod'
 	));
-	$wp_customize->add_control('btn2_url', array(
-		'label' => __('Button 2 URL', 'aguilas'),
+	$wp_customize->add_control('social2_url', array(
+		'label' => __('Instagram Link URL', 'aguilas'),
 		'section' => 'home_hero',
 		'priority' => 4
 	));
-	$wp_customize->add_setting('btn2_text', array(
-		'default' => _x('Learn more', 'aguilas'),
+
+	// Home Hero Link #3
+	$wp_customize->add_setting('social3_url', array(
+		'default' => _x('#', 'aguilas'),
 		'type' => 'theme_mod'
 	));
-	$wp_customize->add_control('btn2_text', array(
-		'label' => __('Button 2 Text', 'aguilas'),
+	$wp_customize->add_control('social3_url', array(
+		'label' => __('Twitter Link URL', 'aguilas'),
 		'section' => 'home_hero',
-		'priority' => 5
+		'priority' => 4
 	));
 
+	// Home Hero Link #4
+	$wp_customize->add_setting('social4_url', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('social4_url', array(
+		'label' => __('Youtube Link URL', 'aguilas'),
+		'section' => 'home_hero',
+		'priority' => 4
+	));
 
-	// Home Hero Image
+	// Home Hero Link #5
+	$wp_customize->add_setting('social5_url', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('social5_url', array(
+		'label' => __('Website Link URL', 'aguilas'),
+		'section' => 'home_hero',
+		'priority' => 4
+	));
+
+	// Home Hero Desktop Image
 
 	$wp_customize->add_setting('home_hero_image', array(
 		'default' => get_bloginfo('template_directory').'/img/showcase.jpg',
 		'type' => 'theme_mod'
 	));
 	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home_hero_image', array(
-		'label' => __('Home Hero Image', 'aguilas'),
+		'label' => __('Home Hero Image 1440x800px', 'aguilas'),
 		'section' => 'home_hero',
 		'settings' => 'home_hero_image',
+		'priority' => 1
+	)));
+
+	// Home Hero Mobile Image
+
+	$wp_customize->add_setting('home_hero_mobile_image', array(
+		'default' => get_bloginfo('template_directory').'/img/showcase.jpg',
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home_hero_mobile_image', array(
+		'label' => __('Home Hero Mobile Image 640x1000px', 'aguilas'),
+		'section' => 'home_hero',
+		'settings' => 'home_hero_mobile_image',
 		'priority' => 1
 	)));
 

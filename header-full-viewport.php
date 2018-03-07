@@ -22,7 +22,7 @@
     <style>
 
         .site-header {
-                background:linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<?php echo get_header_image() ?>) center no-repeat;
+                background:linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<?php echo get_theme_mod('home_hero_mobile_image', get_bloginfo('template_url').'/img/showcase.jpg') ?>) center no-repeat;
         }
 
         @media (min-width: 576px) {
@@ -41,7 +41,7 @@
 
     <header id="masthead" class="site-header">
 
-        <nav id="menu" class="navbar fixed-top navbar-expand-md navbar-light" role="navigation">
+        <nav id="menu" class="navbar fixed-top navbar-expand-lg navbar-light" role="navigation">
 
             <div class="container site-branding navbar-brand">
                 <?php
@@ -81,22 +81,22 @@
         </nav>
         <div class="hero-content">
             <h1 class="white hero-heading"><?php echo get_theme_mod('home_hero_heading', 'YAY I build a theme'); ?></h1>
-            <p class="white">CO-SENIOR PASTOR OF EAGLES FAMILY CHRISTIAN CENTER</p>
+            <h3 class="white hero-text"><?php echo get_theme_mod('home_hero_text', 'The official WordPress theme for Aguilas Centro Familiar Cristiano.'); ?></h3>
         </div>
         <div class="social">
-            <a href="https://www.facebook.com/amandalindseycook" target="_blank" onclick="_gaq.push(['_trackEvent', 'Artist', 'Click', 'Facebook Hero']);">
+            <a href="<?php echo get_theme_mod('social1_url'); ?>" target="_blank">
                 <i class="fa fa-facebook"></i>
             </a>
-            <a href="https://twitter.com/thegreatfalken" target="_blank" onclick="_gaq.push(['_trackEvent', 'Artist', 'Click', 'Twitter Hero']);">
-                <i class="fa fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com/amandalindseycook" target="_blank" onclick="_gaq.push(['_trackEvent', 'Artist', 'Click', 'Instagram Hero']);">
+            <a href="<?php echo get_theme_mod('social2_url'); ?>" target="_blank">
                 <i class="fa fa-instagram"></i>
             </a>
-            <a href="https://www.youtube.com/playlist?list=PLUmTiGOxKUOhBx8xNu3ktk5x2zJsLk9j4" target="_blank" onclick="_gaq.push(['_trackEvent', 'Artist', 'Click', 'Youtube Hero']);">
+            <a href="<?php echo get_theme_mod('social3_url'); ?>" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="<?php echo get_theme_mod('social4_url'); ?>" target="_blank">
                 <i class="fa fa-youtube"></i>
             </a>
-            <a href="http://amandacookmusic.com/" target="_blank" onclick="_gaq.push(['_trackEvent', 'Artist', 'Click', 'Artist Website Hero']);">
+            <a href="<?php echo get_theme_mod('social5_url'); ?>" target="_blank">
                 <i class="fa fa-globe"></i>
             </a>
         </div>

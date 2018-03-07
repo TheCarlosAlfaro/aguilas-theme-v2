@@ -131,10 +131,14 @@ big {
 }
 
 .hero-heading {
-	font-size: 20px;
+	font-size: 2.5rem;
     line-height: 70px;
     padding: 0;
     margin-top: -50px;
+}
+
+.hero-text {
+	font-size: .8rem;
 }
 
 /*--------------------------------------------------------------
@@ -522,6 +526,10 @@ a:hover, a:active {
     margin: 0 10px;
 }
 
+.social a i:hover {
+	color: #CC427F;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -869,10 +877,13 @@ object {
 		margin-left: 0;
 	}
 	.hero-heading {
-		font-size: 64px;
+		font-size: 5rem;
 		line-height: 70px;
 		padding: 0;
 		margin-top: -50px;
+	}
+	.hero-text {
+		font-size: 1.2rem;
 	}
 
 }
