@@ -146,15 +146,146 @@ function aguilas_customize_register( $wp_customize ) {
 		'priority' => 2
 	));
 
-	$wp_customize->add_setting('home_podcast_text', array(
-		'default' => _x('The official WordPress theme for Aguilas Centro Familiar Cristiano.', 'aguilas'),
+	$wp_customize->add_setting('home_podcast_sub_heading', array(
+		'default' => _x('The official WordPress theme', 'aguilas'),
 		'type' => 'theme_mod'
 	));
-	$wp_customize->add_control('home_podcast_text', array(
-		'label' => __('Text', 'aguilas'),
+	$wp_customize->add_control('home_podcast_sub_heading', array(
+		'label' => __('Sub Heading', 'aguilas'),
 		'section' => 'home_podcast',
 		'priority' => 3
 	));
+
+	$wp_customize->add_setting('home_podcast_paragraph', array(
+		'default' => _x('Paragraph example.', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_paragraph', array(
+		'label' => __('Paragraph', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
+
+	$wp_customize->add_setting('home_podcast_button_text', array(
+		'default' => _x('Button Text', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_button_text', array(
+		'label' => __('Button Text', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
+
+	$wp_customize->add_setting('home_podcast_button_url', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_button_url', array(
+		'label' => __('Button URL', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
+
+	$wp_customize->add_setting('home_podcast_links_title', array(
+		'default' => _x('Suscribete en:', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_links_title', array(
+		'label' => __('Links title', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
+
+	// Link TEXT & URL'S
+	// Link 1
+	$wp_customize->add_setting('home_podcast_link_text_1', array(
+		'default' => _x('Apple Podcast', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_link_text_1', array(
+		'label' => __('Link Text 1', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
+	$wp_customize->add_setting('home_podcast_link_url_1', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_link_url_1', array(
+		'label' => __('URL 1', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
+	// Link 2
+	$wp_customize->add_setting('home_podcast_link_text_2', array(
+		'default' => _x('Google Play', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_link_text_2', array(
+		'label' => __('Link Text 2', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
+	$wp_customize->add_setting('home_podcast_link_url_2', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_link_url_2', array(
+		'label' => __('URL 2', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
+	// Link 3
+	$wp_customize->add_setting('home_podcast_link_text_3', array(
+		'default' => _x('Spotify', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_link_text_3', array(
+		'label' => __('Link Text 3', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
+	$wp_customize->add_setting('home_podcast_link_url_3', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_link_url_3', array(
+		'label' => __('URL 3', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
+	// Link 4
+	$wp_customize->add_setting('home_podcast_link_text_4', array(
+		'default' => _x('YouTube', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_link_text_4', array(
+		'label' => __('Link Text 4', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
+	$wp_customize->add_setting('home_podcast_link_url_4', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_link_url_4', array(
+		'label' => __('URL 4', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
+
+
+
+	$wp_customize->add_setting('home_podcast_image', array(
+		'default' => get_bloginfo('template_directory').'/img/showcase.jpg',
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home_podcast_image', array(
+		'label' => __('Image', 'aguilas'),
+		'section' => 'home_podcast',
+		'settings' => 'home_podcast_image',
+		'priority' => 1
+	)));
 
 	// --------------
 
