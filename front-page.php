@@ -11,6 +11,18 @@
 
 get_header('full-viewport'); ?>
 
+<?php get_template_part('parts/home-podcast'); ?>
+
+<?php get_template_part('parts/home-predicas'); ?>
+
+<?php get_template_part('parts/home-devocional'); ?>
+
+<?php get_template_part('parts/home-remas'); ?>
+
+<?php get_template_part('parts/home-tabernaculo'); ?>
+
+<?php get_template_part('parts/home-extraordinaria'); ?>
+
 
 
 <?php

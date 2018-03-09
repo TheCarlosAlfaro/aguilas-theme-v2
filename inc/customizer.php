@@ -16,7 +16,9 @@ function aguilas_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 
-	// Home Hero section
+	/*
+	*Home Hero section
+	*/
     $wp_customize->add_section('home_hero', array(
 		'title' => __('Home Hero', 'aguilas'),
 		'description' => sprintf(__('Options for Home Hero', 'aguilas')),
@@ -124,6 +126,35 @@ function aguilas_customize_register( $wp_customize ) {
 		'settings' => 'home_hero_mobile_image',
 		'priority' => 1
 	)));
+
+	/*
+	*Home PODCAST section
+	*/
+    $wp_customize->add_section('home_podcast', array(
+		'title' => __('Home Podcast', 'aguilas'),
+		'description' => sprintf(__('Options for Home Podcast', 'aguilas')),
+		'priority' => 130
+	));
+
+	$wp_customize->add_setting('home_podcast_heading', array(
+		'default' => _x('Aguilas Theme', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_heading', array(
+		'label' => __('Heading', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 2
+	));
+
+	$wp_customize->add_setting('home_podcast_text', array(
+		'default' => _x('The official WordPress theme for Aguilas Centro Familiar Cristiano.', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_podcast_text', array(
+		'label' => __('Text', 'aguilas'),
+		'section' => 'home_podcast',
+		'priority' => 3
+	));
 
 	// --------------
 
