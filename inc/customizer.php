@@ -17,7 +17,7 @@ function aguilas_customize_register( $wp_customize ) {
 
 
 	/*
-	*Home Hero section
+	* HOME HERE SECTION
 	*/
     $wp_customize->add_section('home_hero', array(
 		'title' => __('Home Hero', 'aguilas'),
@@ -128,7 +128,7 @@ function aguilas_customize_register( $wp_customize ) {
 	)));
 
 	/*
-	*Home PODCAST section
+	* HOME PODCAST SECTION
 	*/
     $wp_customize->add_section('home_podcast', array(
 		'title' => __('Home Podcast', 'aguilas'),
@@ -274,8 +274,7 @@ function aguilas_customize_register( $wp_customize ) {
 		'priority' => 3
 	));
 
-
-
+	// Podcast Image
 	$wp_customize->add_setting('home_podcast_image', array(
 		'default' => get_bloginfo('template_directory').'/img/showcase.jpg',
 		'type' => 'theme_mod'
@@ -286,6 +285,56 @@ function aguilas_customize_register( $wp_customize ) {
 		'settings' => 'home_podcast_image',
 		'priority' => 1
 	)));
+
+	/*
+	* HOME PREDICAS SECTION
+	*/
+	$wp_customize->add_section('home_predicas', array(
+		'title' => __('Home Predicas', 'aguilas'),
+		'description' => sprintf(__('Options for Home Predicas', 'aguilas')),
+		'priority' => 130
+	));
+
+	$wp_customize->add_setting('home_predicas_heading', array(
+		'default' => _x('Aguilas Theme', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_predicas_heading', array(
+		'label' => __('Heading', 'aguilas'),
+		'section' => 'home_predicas',
+		'priority' => 2
+	));
+
+	$wp_customize->add_setting('home_predicas_sub_heading', array(
+		'default' => _x('The official WordPress theme', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_predicas_sub_heading', array(
+		'label' => __('Sub Heading', 'aguilas'),
+		'section' => 'home_predicas',
+		'priority' => 3
+	));
+
+	$wp_customize->add_setting('home_predicas_button_text', array(
+		'default' => _x('Button Text', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_predicas_button_text', array(
+		'label' => __('Button Text', 'aguilas'),
+		'section' => 'home_predicas',
+		'priority' => 3
+	));
+
+	$wp_customize->add_setting('home_predicas_button_url', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_predicas_button_url', array(
+		'label' => __('Button URL', 'aguilas'),
+		'section' => 'home_predicas',
+		'priority' => 3
+	));
+
 
 	// --------------
 
