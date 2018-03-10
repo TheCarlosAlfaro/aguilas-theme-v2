@@ -23,11 +23,13 @@
 
         .site-header {
                 background:linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<?php echo get_theme_mod('home_hero_mobile_image', get_bloginfo('template_url').'/img/showcase.jpg') ?>) center no-repeat;
+                background-size: 100%;
         }
 
         @media (min-width: 576px) {
             .site-header {
                 background:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<?php echo get_theme_mod('home_hero_image', get_bloginfo('template_url').'/img/showcase.jpg') ?>) center no-repeat;
+                background-size: 100%;
             }
         }
     </style>

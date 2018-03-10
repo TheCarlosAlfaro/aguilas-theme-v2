@@ -335,6 +335,58 @@ function aguilas_customize_register( $wp_customize ) {
 		'priority' => 3
 	));
 
+	$wp_customize->add_setting('home_predicas_video_url', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_predicas_video_url', array(
+		'label' => __('Video URL', 'aguilas'),
+		'section' => 'home_predicas',
+		'priority' => 3
+	));
+
+	/*
+	* HOME PREDICAS SECTION
+	*/
+	$wp_customize->add_section('home_devotionals', array(
+		'title' => __('Home Devotionals', 'aguilas'),
+		'description' => sprintf(__('Options for Home Devotionals', 'aguilas')),
+		'priority' => 130
+	));
+
+	$wp_customize->add_setting('home_devotionals_heading', array(
+		'default' => _x('Aguilas Theme', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_devotionals_heading', array(
+		'label' => __('Heading', 'aguilas'),
+		'section' => 'home_devotionals',
+		'priority' => 2
+	));
+
+	$wp_customize->add_setting('home_devotionals_sub_heading', array(
+		'default' => _x('The official WordPress theme', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_devotionals_sub_heading', array(
+		'label' => __('Sub Heading', 'aguilas'),
+		'section' => 'home_devotionals',
+		'priority' => 3
+	));
+
+	// Home PREDICAS Image
+	$wp_customize->add_setting('home_devotionals_image', array(
+		'default' => get_bloginfo('template_directory').'/img/showcase.jpg',
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home_devotionals_image', array(
+		'label' => __('Background Image', 'aguilas'),
+		'section' => 'home_devotionals',
+		'settings' => 'home_devotionals_image',
+		'priority' => 1
+	)));
+
+
 
 	// --------------
 
