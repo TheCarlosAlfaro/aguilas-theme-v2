@@ -386,7 +386,54 @@ function aguilas_customize_register( $wp_customize ) {
 		'priority' => 1
 	)));
 
+	/*
+	* HOME REMAS SECTION
+	*/
+	$wp_customize->add_section('home_remas', array(
+		'title' => __('Home remas', 'aguilas'),
+		'description' => sprintf(__('Options for Home remas', 'aguilas')),
+		'priority' => 130
+	));
 
+	$wp_customize->add_setting('home_remas_heading', array(
+		'default' => _x('Aguilas Theme', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_remas_heading', array(
+		'label' => __('Heading', 'aguilas'),
+		'section' => 'home_remas',
+		'priority' => 2
+	));
+
+	$wp_customize->add_setting('home_remas_sub_heading', array(
+		'default' => _x('The official WordPress theme', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_remas_sub_heading', array(
+		'label' => __('Sub Heading', 'aguilas'),
+		'section' => 'home_remas',
+		'priority' => 3
+	));
+
+	$wp_customize->add_setting('home_remas_button_text', array(
+		'default' => _x('Button Text', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_remas_button_text', array(
+		'label' => __('Button Text', 'aguilas'),
+		'section' => 'home_remas',
+		'priority' => 3
+	));
+
+	$wp_customize->add_setting('home_remas_button_url', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_remas_button_url', array(
+		'label' => __('Button URL', 'aguilas'),
+		'section' => 'home_remas',
+		'priority' => 3
+	));
 
 	// --------------
 

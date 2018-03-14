@@ -842,6 +842,23 @@ object {
 # Sections
 --------------------------------------------------------------*/
 
+/* Full Width Header SINGLE */
+.site-header {
+	background-size: cover !important;
+	height: 100vh;
+}
+
+.hero-content-single {
+	position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 /* Make Theme full width header */
 
 .site-inner {
@@ -855,7 +872,7 @@ object {
 	margin: 0 auto;
 }
 
-.site-header {
+.site-header-full-viewport {
 	background-size: cover !important;
 	height: 100vh;
   }
@@ -976,4 +993,43 @@ button, input[type="button"], input[type="reset"], input[type="submit"]:hover {
 	background-color: #CC427F;
 	border-color: #CC427F;
 	color: #fff
+}
+
+/* Remas Section */
+.box-shadow {
+	box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.card-title a {
+	text-decoration: none;
+	color: #111111;
+}
+
+.card-text a {
+	text-decoration: none;
+	color: #111111;
+}
+
+.btn-outline-secondary {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-width: 1px;
+	padding: 5px 10px;
+	border-color: #111;
+	background-color: transparent;
+	color: #111;
+}
+
+.btn-outline-secondary:hover {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-width: 1px;
+	padding: 5px 10px;
+	background-color: #CC427F;
+	border-color: #CC427F;
+	color: #fff
+}
+
+.card-body {
+    padding: 1rem;
 }

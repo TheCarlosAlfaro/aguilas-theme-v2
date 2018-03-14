@@ -178,3 +178,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * Filter the except length to 20 words.
+ */
+function aguilas_custom_excerpt_length( $length ) {
+    return 16;
+}
+add_filter( 'excerpt_length', 'aguilas_custom_excerpt_length', 999 );
+

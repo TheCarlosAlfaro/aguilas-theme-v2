@@ -21,13 +21,13 @@
 
     <style>
 
-        .site-header {
+        .site-header-full-viewport {
                 background:linear-gradient(0deg,rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(<?php echo get_theme_mod('home_hero_mobile_image', get_bloginfo('template_url').'/img/showcase.jpg') ?>) center no-repeat;
                 background-size: 100%;
         }
 
         @media (min-width: 576px) {
-            .site-header {
+            .site-header-full-viewport {
                 background:linear-gradient(0deg,rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(<?php echo get_theme_mod('home_hero_image', get_bloginfo('template_url').'/img/showcase.jpg') ?>) center no-repeat;
                 background-size: 100%;
             }
@@ -41,7 +41,7 @@
 
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aguilas' ); ?></a>
 
-    <header id="masthead" class="site-header">
+    <header id="masthead" class="site-header-full-viewport">
 
         <nav id="menu" class="navbar fixed-top navbar-expand-lg navbar-light" role="navigation">
 
