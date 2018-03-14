@@ -18,14 +18,15 @@
                                     <h3 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                     <p class="card-text"><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_content(), 12) ?></a></p>
                                     <div class="d-flex justify-content-between align-items-center">
+
+                                        <a href="<?php the_permalink(); ?>">
+                                            <small class="text-muted"><?php the_time('M-d-Y') ?></small>
+                                        </a>
                                         <div class="btn-group">
                                             <a href="<?php the_permalink(); ?>">
                                                 <button type="button" class="btn btn-sm btn-outline-secondary">Leer Mas</button>
                                             </a>
                                         </div>
-                                        <a href="<?php the_permalink(); ?>">
-                                            <small class="text-muted"><?php the_time('M-d-Y') ?></small>
-                                        </a>
                                     </div>
                                 </div>
                             </div>

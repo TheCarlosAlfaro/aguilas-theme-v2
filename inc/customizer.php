@@ -346,7 +346,7 @@ function aguilas_customize_register( $wp_customize ) {
 	));
 
 	/*
-	* HOME PREDICAS SECTION
+	* HOME DEVOCIONAL SECTION
 	*/
 	$wp_customize->add_section('home_devotionals', array(
 		'title' => __('Home Devotionals', 'aguilas'),
@@ -374,7 +374,7 @@ function aguilas_customize_register( $wp_customize ) {
 		'priority' => 3
 	));
 
-	// Home PREDICAS Image
+	// Home DEVOCIONAL Image
 	$wp_customize->add_setting('home_devotionals_image', array(
 		'default' => get_bloginfo('template_directory').'/img/showcase.jpg',
 		'type' => 'theme_mod'
@@ -434,6 +434,128 @@ function aguilas_customize_register( $wp_customize ) {
 		'section' => 'home_remas',
 		'priority' => 3
 	));
+
+	/*
+	* HOME TABERNACULO SECTION
+	*/
+	$wp_customize->add_section('home_tabernaculo', array(
+		'title' => __('Home tabernaculo', 'aguilas'),
+		'description' => sprintf(__('Options for Home tabernaculo', 'aguilas')),
+		'priority' => 130
+	));
+
+	$wp_customize->add_setting('home_tabernaculo_heading', array(
+		'default' => _x('Aguilas Theme', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_tabernaculo_heading', array(
+		'label' => __('Heading', 'aguilas'),
+		'section' => 'home_tabernaculo',
+		'priority' => 2
+	));
+
+	$wp_customize->add_setting('home_tabernaculo_sub_heading', array(
+		'default' => _x('The official WordPress theme', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_tabernaculo_sub_heading', array(
+		'label' => __('Sub Heading', 'aguilas'),
+		'section' => 'home_tabernaculo',
+		'priority' => 3
+	));
+
+	$wp_customize->add_setting('home_tabernaculo_paragraph', array(
+		'default' => _x('Paragraph example.', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_tabernaculo_paragraph', array(
+		'label' => __('Paragraph', 'aguilas'),
+		'section' => 'home_tabernaculo',
+		'priority' => 3
+	));
+
+	// Home TABERNACULO Image
+	$wp_customize->add_setting('home_tabernaculo_image', array(
+		'default' => get_bloginfo('template_directory').'/img/showcase.jpg',
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home_tabernaculo_image', array(
+		'label' => __('Background Image', 'aguilas'),
+		'section' => 'home_tabernaculo',
+		'settings' => 'home_tabernaculo_image',
+		'priority' => 1
+	)));
+
+	/*
+	* HOME extraordinaria SECTION
+	*/
+	$wp_customize->add_section('home_extraordinaria', array(
+		'title' => __('Home extraordinaria', 'aguilas'),
+		'description' => sprintf(__('Options for Home extraordinaria', 'aguilas')),
+		'priority' => 130
+	));
+
+	$wp_customize->add_setting('home_extraordinaria_heading', array(
+		'default' => _x('Aguilas Theme', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_extraordinaria_heading', array(
+		'label' => __('Heading', 'aguilas'),
+		'section' => 'home_extraordinaria',
+		'priority' => 2
+	));
+
+	$wp_customize->add_setting('home_extraordinaria_sub_heading', array(
+		'default' => _x('The official WordPress theme', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_extraordinaria_sub_heading', array(
+		'label' => __('Sub Heading', 'aguilas'),
+		'section' => 'home_extraordinaria',
+		'priority' => 3
+	));
+
+	$wp_customize->add_setting('home_extraordinaria_paragraph', array(
+		'default' => _x('Paragraph example.', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_extraordinaria_paragraph', array(
+		'label' => __('Paragraph', 'aguilas'),
+		'section' => 'home_extraordinaria',
+		'priority' => 3
+	));
+
+	$wp_customize->add_setting('home_extraordinaria_button_text', array(
+		'default' => _x('Button Text', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_extraordinaria_button_text', array(
+		'label' => __('Button Text', 'aguilas'),
+		'section' => 'home_extraordinaria',
+		'priority' => 3
+	));
+
+	$wp_customize->add_setting('home_extraordinaria_button_url', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_extraordinaria_button_url', array(
+		'label' => __('Button URL', 'aguilas'),
+		'section' => 'home_extraordinaria',
+		'priority' => 3
+	));
+
+	// Home extraordinaria Image
+	$wp_customize->add_setting('home_extraordinaria_image', array(
+		'default' => get_bloginfo('template_directory').'/img/showcase.jpg',
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home_extraordinaria_image', array(
+		'label' => __('Background Image', 'aguilas'),
+		'section' => 'home_extraordinaria',
+		'settings' => 'home_extraordinaria_image',
+		'priority' => 1
+	)));
 
 	// --------------
 

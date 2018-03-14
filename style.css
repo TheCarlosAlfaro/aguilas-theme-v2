@@ -930,6 +930,14 @@ object {
 	padding-top: 40px;
 }
 
+.bottom-pad {
+	padding-bottom: 40px;
+}
+
+.extra-bottom-pad {
+	padding-bottom: 30%;
+}
+
 .section {
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -947,6 +955,17 @@ object {
 	color: #111111;
 }
 
+.section-header-white {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #ffffff;
+}
+.section-sub-header-white {
+	font-size: 1.1rem;
+	/* font-weight: bold; */
+	color: #ffffff;
+}
+
 .pink-back {
 	background-color: #F3E0EC;
 }
@@ -956,7 +975,7 @@ object {
 }
 
 .split-color-back {
-  background:linear-gradient(100deg,rgba(247, 249, 249, 1),rgba(243, 224, 236, 1))
+  background:linear-gradient(120deg,rgba(247, 249, 249, 1),rgba(234, 200, 221, 1))
 }
 
 .btn-outline-primary, button, input[type="button"], input[type="reset"], input[type="submit"] {
@@ -1033,3 +1052,4 @@ button, input[type="button"], input[type="reset"], input[type="submit"]:hover {
 .card-body {
     padding: 1rem;
 }
+
