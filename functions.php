@@ -45,6 +45,7 @@ if ( ! function_exists( 'aguilas_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'aguilas' ),
+			'secondary' => esc_html__( 'Secondary', 'aguilas' )
 		) );
 
 		/*

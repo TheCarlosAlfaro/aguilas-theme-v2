@@ -868,7 +868,7 @@ object {
 .site-content,
 .site-footer,
 .site-header-main {
-	max-width: 1320px;
+	max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -1053,3 +1053,13 @@ button, input[type="button"], input[type="reset"], input[type="submit"]:hover {
     padding: 1rem;
 }
 
+/* FOOTER */
+.site-footer {
+	background-color: #2c2c2c;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.site-footer a {
+	color: #f2f2f2;
+}

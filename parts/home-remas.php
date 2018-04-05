@@ -16,7 +16,7 @@
                                 <a href="<?php the_permalink(); ?>"><img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="Card image cap"></a>
                                 <div class="card-body">
                                     <h3 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                    <p class="card-text"><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_content(), 12) ?></a></p>
+                                    <p class="card-text"><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_content(), 8) ?></a></p>
                                     <div class="d-flex justify-content-between align-items-center">
 
                                         <a href="<?php the_permalink(); ?>">
