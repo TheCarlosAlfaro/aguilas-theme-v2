@@ -254,8 +254,16 @@ table {
 	width: 100%;
 }
 
-h1.entry-title, h2.entry-title {
+h1.entry-title, h2.entry-title a {
 	margin-top: 0.5em;
+	text-decoration: none;
+	color:#111111;
+}
+
+h1.entry-title a, h2.entry-title a:hover {
+	margin-top: 0.5em;
+	text-decoration: none;
+	color:#CC427F;
 }
 
 footer {

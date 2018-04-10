@@ -36,7 +36,7 @@
 
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content text-center">
 		<?php
 			if (is_single()) {
 				the_content( sprintf(
