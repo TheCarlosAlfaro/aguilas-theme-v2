@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive-podcast pages
+ * The template for displaying archive-podcast
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

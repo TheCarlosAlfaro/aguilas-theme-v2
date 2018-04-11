@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive-preaching
+ * The template for displaying archive-rema
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
