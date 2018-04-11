@@ -16,7 +16,7 @@ get_header('simple'); ?>
 
             <!--right-->
             <div class="col-md-12">
-                <h1 class="text-center top-pad">Predicas</h1>
+                <h1 class="text-center top-pad">Remas</h1>
             <?php
                 $counter = 0;
                 $startRow = true;
