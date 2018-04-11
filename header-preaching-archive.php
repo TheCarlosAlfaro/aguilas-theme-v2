@@ -1,6 +1,6 @@
 <?php
 /**
- * The header for our theme
+ * The header for archive-preaching
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
@@ -68,9 +68,6 @@
                 ]);
             ?>
         </nav>
-        <div class="hero-content-single">
-			<h2 class="white hero-heading">Bienvenido Al <?php echo post_type_archive_title( '', false ); ?></h2>
 
-        </div>
     </header><!-- #masthead -->
 </div>

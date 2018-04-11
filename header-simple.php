@@ -24,13 +24,11 @@
 <body <?php body_class(); ?>>
 <div class="nav-container">
 
-	<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aguilas' ); ?></a>
 
-    <header id="masthead" class="site-header" style="background:linear-gradient(0deg,rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('<?php echo $backgroundImg[0]; ?>') center no-repeat; background-size: 100%;">
+    <header id="masthead" class="site-header simple-header">
 
-        <nav id="menu" class="navbar fixed-top navbar-expand-lg navbar-light" role="navigation">
+        <nav id="menu2" class="navbar fixed-top navbar-expand-lg navbar-light" role="navigation">
 
             <div class="container site-branding navbar-brand">
                 <?php
@@ -68,9 +66,5 @@
                 ]);
             ?>
         </nav>
-        <div class="hero-content-single">
-			<h2 class="white hero-heading">Bienvenido Al <?php echo post_type_archive_title( '', false ); ?></h2>
-
-        </div>
     </header><!-- #masthead -->
 </div>

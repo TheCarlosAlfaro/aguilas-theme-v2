@@ -7,7 +7,7 @@
  * @package Aguilas
  */
 
-get_header(); ?>
+get_header('simple'); ?>
 
 <div class="container">
 	<div class="row">
