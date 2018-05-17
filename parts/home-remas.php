@@ -6,12 +6,12 @@
             <div class="row">
                 <?php
                     $remaPosts = new WP_Query(array(
-                        'post_type' => 'rema',
-                        'posts_per_page' => 4
+                        'post_type' => 'devotional',
+                        'posts_per_page' => 3
                     ));
                     while ($remaPosts->have_posts()) {
                         $remaPosts->the_post(); ?>
-                        <div class="col-md-6 col-xl-3">
+                        <div class="col-md-6 col-xl-4">
                             <div class="card mb-4 box-shadow">
                                 <a href="<?php the_permalink(); ?>"><img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="Card image cap"></a>
                                 <div class="card-body">
